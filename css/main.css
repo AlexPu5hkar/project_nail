@@ -30,7 +30,7 @@ img {
     width: 100%;
     height: 100vh;
    /* background-color: #556983;*/
-   /* background-image: url(./image/header/flow.JPG);*/
+    background-image: url(video/river.jpg);
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -184,7 +184,7 @@ img {
 
 .footer-copyright {
     max-width: 350px;
-    color: beige;
+    color: rgb(245, 245, 220);
     line-height: 1.3;
 }
 

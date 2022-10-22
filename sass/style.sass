@@ -1,0 +1,338 @@
+$bright: #f5f5dc
+$dark: #000000
+$footer: #02393B
+$gradient: linear-gradient(180deg, #02393B, #C0BDA5)
+  
+*
+  box-sizing: border-box
+
+html
+  scroll-behavior: smooth
+
+body
+  margin: 0
+  font-family: 'Montserrat', sans-serif
+  color: $bright
+
+img
+  max-width: 100%
+
+.container
+  max-width: 1140px
+  margin-left: auto
+  margin-right: auto
+  padding-left: 15px
+  padding-right: 15px
+
+.header
+  position: relative
+  width: 100%
+  height: 100vh
+
+  /* background-color: #556983;
+  /* background-image: url(./image/header/flow.JPG);
+  background-size: cover
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+
+.header-title
+  margin: 0
+  margin-bottom: 25px
+  font-family: 'Great Vibes', cursive
+  font-weight: 400
+  font-size: 90px
+  line-height: 130%
+  text-align: center
+  color: $bright
+
+.header-subtitle
+  margin: 0
+  font-weight: 600
+  font-size: 16px
+  line-height: 150%
+  letter-spacing: 0.2em
+  text-transform: uppercase
+  color: $bright
+
+.header-arrow
+  width: 48px
+  height: 48px
+  position: absolute
+  bottom: 0
+  left: 50%
+  transform: translate(-50%, 0)
+
+.picture
+  width: 48px
+  height: 48px
+
+.header-social-ref
+  position: absolute
+  right: 15px
+  top: 5px
+
+.ref-list
+  > li
+    &:hover
+      filter: brightness(150%)
+
+    margin: 10px
+
+  list-style: none
+
+.portfolio
+  padding-top: 80px
+  padding-bottom: 115px
+  background: $gradient
+
+.portfolio-header
+  margin: 0
+  margin-bottom: 70px
+  font-weight: 700
+  font-size: 46px
+  line-height: 130%
+  text-align: center
+  color: black
+
+.portfolio-cards-wrapper
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+
+.card
+  margin-bottom: 30px
+  max-width: 540px
+  background-color: $bright
+  box-shadow: 0px 10px 40px rgba(126, 155, 189, 0.35)
+  transition: transform 0.2s ease-in
+  border-radius: 25px
+
+  &:hover
+    transform: translateY(-15px)
+
+  &:last-child, &:nth-last-child(2)
+    margin-bottom: 0
+
+.card-img
+  margin-bottom: 20px
+  width: 500px
+  border-radius: 25px
+  filter: blur(3px)
+
+  &:hover
+    filter: none
+
+.card-title
+  margin: 0
+  margin-bottom: 13px
+  font-weight: 600
+  font-size: 24px
+  line-height: 130%
+
+.card p
+  font-size: 16px
+  line-height: 130%
+  margin: 0
+
+.card-link
+  display: block
+  padding: 20px
+  color: $dark
+  text-decoration: none
+  transition: color 0.2s ease-in
+
+  &:hover
+    color: rgb(62, 23, 192)
+
+/* footer
+
+.footer
+  padding-top: 45px
+  padding-bottom: 45px
+  background: $footer
+  color: $bright
+
+.footer-row
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+
+.footer-copyright
+  max-width: 350px
+  color: beige
+  line-height: 1.3
+
+.footer-copyright-name
+  font-family: 'Great Vibes', cursive
+  font-weight: 700
+  font-size: 28px
+  margin-bottom: 15px
+
+.footer-copyright p
+  margin: 0
+  margin-bottom: 15px
+  font-weight: 600
+  font-size: 16px
+
+.footer-icons
+  max-width: 350px
+
+  p
+    font-weight: 600
+    font-size: 16px
+    line-height: 1.3
+
+.footer-icons-row
+  display: flex
+  align-items: center
+
+.footer-icons-row > * + *
+  margin-left: 18px
+
+.footer-contacts
+  max-width: 350px
+
+.footer-button
+  display: inline-block
+  height: 50px
+  padding-left: 30px
+  padding-right: 30px
+  line-height: 44px
+  border: 3PX solid $bright
+  border-radius: 50px
+  color: $bright
+  font-weight: 700
+  font-size: 16px
+  text-transform: uppercase
+  text-decoration: none
+  transition: all 0.2s ease-in
+
+  &:hover
+    background-color: #434545
+    color: $dark
+
+.footer-contacts p
+  margin: 15px 0
+  font-size: 16px
+  line-height: 1.3
+  color: beige
+
+
+/*project
+
+.project
+  padding: 80px 0 121px 0
+  text-align: center
+  background: $gradient
+
+.project-header
+  margin: 0
+  margin-bottom: 40px
+  font-weight: bold
+  font-size: 46px
+  line-height: 1.3
+
+.project-img
+  margin-bottom: 70px
+
+.julia
+  border-radius: 25px
+
+.project-discription
+  max-width: 730px
+  margin: 120px auto 60px
+
+  p
+    font-size: 16px
+    line-height: 1.5
+    margin-top: 100px
+    margin-bottom: 15px
+
+.???
+  max-width: 1110px
+  margin-left: auto
+  margin-right: auto
+
+.project-btn-back
+  display: inline-block
+  height: 60px
+  padding-left: 30px
+  padding-right: 30px
+  line-height: 54px
+  border: 3PX solid $bright
+  border-radius: 50px
+  color: $bright
+  font-weight: 700
+  font-size: 16px
+  text-transform: uppercase
+  text-decoration: none
+  transition: all 0.2s ease-in
+
+  &:hover
+    background-color: #a5a3a3
+    color: $dark
+
+.table
+  margin: auto
+  width: 90%
+  text-align: left
+  padding-bottom: 10px
+  &_design
+    padding-bottom: 150px
+
+.thead
+  background: rgba(192, 189, 165, 0.2)
+
+.row
+  text-align: center
+
+tr:hover
+  background: rgba(192, 189, 165, 0.2)
+
+.slider
+  position: relative
+  height: 456px
+
+.slider_item
+  border-radius: 25px
+  margin-bottom: 20px
+  margin-top: 36px
+  width: 326px
+  height: 244px
+  object-fit: cover
+  transition: 0.2s ease-in
+
+.slider .center .slider_item
+  margin-top: 0
+  width: 422px
+  height: 316px
+
+.slider_btn
+  display: block
+  width: 68px
+  height: 68px
+  border-radius: 50%
+  display: flex
+  justify-content: center
+  align-items: center
+  background: $gradient
+
+.slider_btn--prev
+  position: absolute
+  top: 154px
+  left: -40px
+  transform: translateY(-50%)
+  padding-left: 16px
+  justify-content: flex-start
+  z-index: 2
+
+.slider_btn--next
+  position: absolute
+  top: 154px
+  right: -40px
+  transform: translateY(-50%)
+  padding-left: 16px
+  justify-content: flex-start
+  z-index: 2
